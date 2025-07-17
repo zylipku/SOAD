@@ -1,0 +1,25 @@
+_target_: src.models.soad.SoadLitModule
+
+noise_estimator:
+  _target_: src.models.components.unet.UNetSDA
+  channels: ${..num_channels}
+
+diffusion_scheduler:
+  _target_: src.diffusion.scheduler.VPSDEScheduler
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 1.5e-4
+  weight_decay: 7.5e-6
+
+scheduler_kwargs:
+  max_epochs: ${trainer.max_epochs}
+  # _target_: torch.optim.lr_scheduler.LambdaLR
+  # _partial_: true
+  # lr_lambda: "lambda t: 1 - (t / ${trainer.max_epochs})"
+
+# compile model for faster training with pytorch 2.0
+compile: true
+
+num_channels: ???

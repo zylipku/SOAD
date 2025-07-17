@@ -1,0 +1,10 @@
+defaults:
+  - model_checkpoint
+  - free_generation
+  - model_summary
+  - rich_progress_bar
+  - _self_
+
+
+model_summary:
+  max_depth: -1

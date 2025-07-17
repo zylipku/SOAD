@@ -1,0 +1,6 @@
+_target_: src.data.qg_datamodule.QGDataModule
+batch_size: 1
+
+num_workers: 4
+random_crop: true
+# pin_memory: False

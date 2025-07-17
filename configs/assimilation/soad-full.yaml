@@ -1,0 +1,8 @@
+obs_type2channel:
+  arctan3x: [2, 3]
+  sin3x: [4, 5]
+  vor2vel: [6, 7, 8, 9]
+ckpt_path: ckpts/qg3/maa_all_obs/epoch=685-step=343000.ckpt
+model:
+  _target_: src.models.components.unet.UNetSDA
+  channels: 10

@@ -1,7 +1,8 @@
 # SOAD
-This is the official implementation for the work ``State-observation augmented diffusion model for nonlinear assimilation''.
 
-[arxiv link](http://arxiv.org/abs/2407.21314)
+This is the official implementation for the work ``State-observation augmented diffusion model for nonlinear assimilation with unknown dynamics''.
 
-Current repository is still under construction, please feel free to reach me via e-mail for any assistance.
-All the codes for reproducitivity will be available before the paper is accepted.
+- [arXiv link](http://arxiv.org/abs/2407.21314)
+- [journal](https://www.sciencedirect.com/science/article/pii/S0021999125005236)
+
+Please feel free to reach me via e-mail for any assistance.

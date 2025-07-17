@@ -1,0 +1,8 @@
+obs_type2channel:
+  arctan3x: [0, 1]
+  sin3x: [0, 1]
+  vor2vel: [0, 1]
+ckpt_path: ckpts/qg3/sda_baseline_crop/epoch=86-step=115971.ckpt
+model:
+  _target_: src.models.components.unet.UNetSDA
+  channels: 2

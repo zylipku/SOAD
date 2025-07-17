@@ -1,0 +1,25 @@
+# @package _global_
+
+# specify here default configuration
+# order of defaults determines the order in which configs override each other
+defaults:
+  - soad-arctan3x@_here_
+  - _self_
+
+obs_types:
+  - arctan3x
+
+data:
+  _target_: src.data.qg_datamodule.QGDataModule
+  batch_size: 1
+
+  num_workers: 4
+  random_crop: true
+
+methods: sda
+
+rand_mask_ratios: 1.0
+
+time_strides: 1
+
+seed: 0

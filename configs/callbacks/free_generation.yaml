@@ -1,0 +1,3 @@
+free_generation:
+  _target_: src.callbacks.free_generation.FreeGeneration
+  num_channels: ${model.num_channels}

@@ -1,0 +1,6 @@
+obs_type2channel:
+  arctan3x: [2, 3]
+ckpt_path: ckpts/qg3/unet_sda_baseline_crop_sin3x/epoch=658-step=219447.ckpt
+model:
+  _target_: src.models.components.unet.UNetSDA
+  channels: 4

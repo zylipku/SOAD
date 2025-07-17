@@ -1,0 +1,6 @@
+obs_type2channel:
+  arctan3x: [2, 3, 4, 5]
+ckpt_path: ckpts/qg3/maa_crop_vor2vel/epoch=269-step=540000.ckpt
+model:
+  _target_: src.models.components.unet.UNetSDA
+  channels: 6

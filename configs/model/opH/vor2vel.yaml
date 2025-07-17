@@ -1,0 +1,2 @@
+_target_: src.observations.Vor2Vel
+sigma: 0.01
